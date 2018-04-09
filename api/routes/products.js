@@ -6,17 +6,20 @@ const Product = require('../models/product')
 
 router.get('/', (req, res, next) => {
     Product.find()
+    .select('name price _id')
     .exec()
     .then(doc => {
         console.log(doc)
         if(doc.length > 0){
-            res.status(200).json(doc)
+            res.status(200).json({
+                count: doc.length,
+                product: doc
+            })
         } else{
             res.status(404).json({
                 message: 'No products to show'
             })
         }
-
     })
     .catch(err => {
         console.log(err)
@@ -54,8 +57,6 @@ router.post('/', (req, res, next) => {
             error: err
         })
     })
-
-
 })
 
 router.get('/:productId', (req, res, next) => {
