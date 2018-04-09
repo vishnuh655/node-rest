@@ -13,7 +13,17 @@ router.get('/', (req, res, next) => {
         if(doc.length > 0){
             res.status(200).json({
                 count: doc.length,
-                product: doc
+                product: doc.map(docs => {
+                    return({
+                        name: docs.name,
+                        price: docs.price,
+                        _id: docs._id,
+                        request: {
+                            type: 'GET',
+                            url: 'http://localhost:3000/products/' + docs._id
+                        }
+                    })   
+                })
             })
         } else{
             res.status(404).json({
