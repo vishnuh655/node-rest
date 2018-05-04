@@ -1,4 +1,5 @@
 const express = require('express')
+const dotenv = require('dotenv').config()
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -10,7 +11,6 @@ const userRoutes = require('./api/routes/user')
 
 //Database Connection
 mongoose.connect(process.env.MONGODB)
-
 
 //Logging
 app.use(morgan('dev'))
