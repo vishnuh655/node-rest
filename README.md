@@ -1,11 +1,7 @@
 # node-rest
 A Node.js RESTful API made from scratch using [express.js](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/). 
 
-[![GitHub license](https://img.shields.io/github/license/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/blob/master/LICENSE)
-
-[![GitHub issues](https://img.shields.io/github/issues/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/issues)
-
-[![GitHub stars](https://img.shields.io/github/stars/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/stargazers)
+[![GitHub license](https://img.shields.io/github/license/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/issues)
 
 ## Features
 - Secured enpoints using [JSON Web Tokens](https://github.com/auth0/node-jsonwebtoken).
