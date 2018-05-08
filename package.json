@@ -4,6 +4,7 @@
   "description": "Node.js restful API",
   "main": "server.js",
   "scripts": {
+    "setup": "node setup.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
