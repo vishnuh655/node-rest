@@ -1,7 +1,11 @@
 # node-rest
-A Node.js RESTful API made from scratch using [express.js](https://expressjs.com/). 
+A Node.js RESTful API made from scratch using [express.js](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/). 
 
-[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+[![GitHub license](https://img.shields.io/github/license/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/blob/master/LICENSE)
+
+[![GitHub issues](https://img.shields.io/github/issues/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/issues)
+
+[![GitHub stars](https://img.shields.io/github/stars/vishnuh655/node-rest.svg)](https://github.com/vishnuh655/node-rest/stargazers)
 
 ## Features
 - Secured enpoints using [JSON Web Tokens](https://github.com/auth0/node-jsonwebtoken).
@@ -20,6 +24,7 @@ A Node.js RESTful API made from scratch using [express.js](https://expressjs.com
 - Edit the .env file to add mongodb URI in the 'MONGODB' field and save.
 - Run using
     `$ npm start`
+- Use [cURL](https://curl.haxx.se/) or [Postman](https://www.getpostman.com/) for testing the API.
 
 ## Folder Structure
 ```
@@ -37,4 +42,11 @@ A Node.js RESTful API made from scratch using [express.js](https://expressjs.com
 └── setup.js                 # .env generator
 ```    
 
+## API
+[Documentaion](https://github.com/vishnuh655/node-rest)
+
+## License
+MIT License
+
+Copyright (c) 2018 Vishnu Haridas
 
